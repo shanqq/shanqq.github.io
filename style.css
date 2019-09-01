@@ -1,0 +1,153 @@
+body{
+    display: block;
+    background-color: #eee0;
+    margin: 0px 5px;
+    padding: 5px;
+
+}
+
+.MySite {
+    display: block;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2em;
+    font-family: impact,sans-serif,shirkhand;
+    border: collapse;
+}
+div#nav-container {
+    display: block;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+div#nav-title {
+    font-family: monospace;
+    /* width: 80px; */
+    display: block;
+    /* height: 20px; */
+    font-size: small;
+    font-style: italic;
+    text-align: start;
+    padding-left: 6px;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+[href^="#"] {
+    text-decoration-color: #cdcfff;
+    font-size: 20px;
+    /* margin: 2px; */
+    padding: 2px;
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+}
+
+[href^="#"]:hover {
+    background-color: #cdcfff;
+}
+
+@keyframes boxAnimation{
+    0% {
+        border: 1px solid black;
+        opacity: 0;
+    }
+    
+    25% {
+        width: 100%;
+        height: 50%;
+        opacity: 1;
+    }
+    50% {
+        width: 100px;
+        opacity: 0;
+    }
+    100% {
+        border: 2px solid green;
+        width: 75%;
+        opacity: 1;
+}
+}    
+.booxx{
+    width: 255px;
+    margin-top: 2px;
+    background-color: black;
+    animation-name: boxAnimation;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+
+}
+.count-4{
+    animation-iteration-count:5;
+}
+.footer1{
+margin: 0%;
+opacity:0;
+border: 5px solid black;
+animation-duration: 5s;
+animation-name: borderanimation;
+animation-fill-mode: forwards;
+animation-direction: normal;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+}
+@keyframes borderanimation{
+    0%{
+        border-left-color: blue;
+        opacity:1;
+
+    }
+    25%{
+        border-bottom-color: aqua;
+        opacity:1;
+    }
+    50%{
+
+        border-right-color:greenyellow;
+        opacity:1;
+    }
+    75%{
+
+        border-top-color: blanchedalmond;
+        opacity:1;
+    }
+    100%{
+      
+        opacity:1;
+        z-index: -1;
+
+    }
+}
+
+.booxx22{
+    padding:60px;
+    background-color: aqua;
+    color: black;
+}
+
+
+@media(max-width:700px){
+    .booxx22{
+        background-color: blue;
+
+    }
+}
+
+@media(max-width:1000px){
+    .booxx22{
+        background-color: rgb(215, 215, 226);
+        
+    }
+}
+
+@media(max-width:400px){
+    .booxx22{
+        background-color: rgb(253, 101, 13);
+        
+    }
+}
